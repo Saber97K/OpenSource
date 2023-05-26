@@ -1,0 +1,116 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .container-upper{
+    width: 480px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding-top: 30px;
+  }
+  .loginText{
+    border-bottom: 1px solid black;
+    padding-left: 20px;
+  }
+  
+  .container {
+    padding:20px;
+    padding-bottom: 0px;
+  }
+  .main-form-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .upper-form-group1{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    padding-right: 9.2px;
+    border-right: 1px solid black ;
+
+  }
+  .upper-form-group2{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+
+  }
+  .password-zone{
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  input:focus{
+    outline:none
+  }
+  
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+
+    
+  }
+
+  .btnzone{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 30px;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .dropdown select {
+    padding: 10px 10px;
+    border: none;
+    border-bottom: 1px solid transparent;
+    border-color: black;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    font-weight: 500;
+  }
+
+  
