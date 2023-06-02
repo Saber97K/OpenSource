@@ -18,14 +18,10 @@ body{
     gap: 30px;
 
 }
-.main .content h1{
-    margin-bottom: -15px; /* Adapt 20px gap to 5px */
-
-}
 
 .main .sidebar{
     padding: 30px;
-    padding-top: 50px;
+    padding-top: 70px;
     min-width: 350px;
     flex-shrink: 0;
     margin-left: 20px;
@@ -41,19 +37,6 @@ body{
 	
 	}
 
-    .text-input{
-        padding: .7em 1rem;
-        display: block;
-        width: 100%;
-        border-radius: 5px;
-        border:1px solid #e0e0e0;
-        outline: none;
-        color: #444;
-        line-height: 1.5rem;
-        font-family: 'lora' ,'serif';
-        font-size: 1.2em;
-    
-    }
 
 .sidebar .section .topics ul li a{
     padding: 10px 0px 15px 0px;
@@ -124,7 +107,7 @@ body{
     margin-right: 20px;
 }
 
-.text button {
+.read-more {
     position: absolute;
     bottom: 12px;
     right: 12px;
@@ -135,10 +118,36 @@ body{
     transition: color 0.15s , background-color 0.15s;
 
 }
-.text button:hover{
+.read-more:hover{
     color: #1e74e3;
     background-color: white;
     border: 1px solid #1e74e3;
     cursor: pointer;
 }
 
+.recent-post-title{
+    padding: 10px;
+    height: 40px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pagination a {
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  

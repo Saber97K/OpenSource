@@ -1,31 +1,46 @@
-    <div class="header">
-        <div class="left-part">
+    <?php if(isset($_SESSION['id'])): ?>
+      <div class="header">
+      <div class="left-part" style = "padding:15px 35px;">
+    <?php else:  ?>
+      <div class="header" style = "padding:15px;">
+      <div class="left-part">
+    <?php endif; ?>
             <div class="logo">
-                <a href=""> Ali & Ahmed</a>
+                <a href="<?php echo BASE_URL . '/index.php' ?>"> Ali & Ahmed</a>
             </div>
         </div>
             <ul class="middle">
-                <li><a href="" class="home">Home</a></li>
-                <li><a href="" class="home">About</a></li>
-                <li><a href="" class="home">Dashboard</a></li>
-                <li><a href="" class="home">Help</a></li>
+                
             </ul>
-        <div class="right-part">
+        <div class="right-part">  
             <div class="toggle_btn">
             <i class="fa-solid fa-bars fa-xl"></i>
             </div>
-            <button class="btnLogin">login</button>
-            <button class="btnLogin">Register</button>
+            <?php if(isset($_SESSION['id'])): ?>
+              <div class="dropdown_user">
+                <button class="dropbtn"><?php echo $_SESSION['username']; ?></button>
+                <div class="dropdown-content">
+                <a href="<?php echo BASE_URL . '/logout.php' ?>">logout</a>
+                <?php if(($_SESSION['role_id']) != '1' ): ?>
+                  <li><a href="<?php echo BASE_URL . '/dashboard/dashboard.php' ?>">dashboard</a></li>
+                <?php endif; ?>
+                </div>
+              </div>
+            <?php else: ?>
+              <a href="<?php echo BASE_URL . '/login.php' ?>" class="btnLogin">login</a>
+              <a href="<?php echo BASE_URL . '/register.php' ?>" class="btnLogin">Register</a>
+            <?php endif; ?>
         </div>
     </div>
 
     <div class="dropdown_menu">
-        <li><a href="" class="home">Home</a></li>
-        <li><a href="" class="home">About</a></li>
-        <li><a href="" class="home">Dashboard</a></li>
-        <li><a href="" class="home">Help</a></li>
+      <?php if(isset($_SESSION['id'])): ?>
+        <li><a href="<?php echo BASE_URL . '/logout.php' ?>">logout</a></li>
+        <li><a href="<?php echo BASE_URL . '/dashboard/dashboard.php' ?>">dashboard</a></li>
+      <?php else: ?>
         <li><button class="btnLogin">login</button></li>
         <li> <button class="btnLogin">Register</button></li>
+      <?php endif; ?>
     </div>
 
     <script>

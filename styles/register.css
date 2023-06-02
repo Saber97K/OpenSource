@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    flex-direction: column;
   }
   .container-upper{
     width: 480px;
@@ -25,22 +26,19 @@
     justify-content: space-between;
   }
 
-  .upper-form-group1{
+  .upper-form-group2 ,   .upper-form-group1{
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
-    padding-right: 9.2px;
-    border-right: 1px solid black ;
+    gap: 30px;
 
   }
-  .upper-form-group2{
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
+
+  .upper-form-group1{
+    padding-right: 9.2px;
+    border-right: 1px solid black ;
 
   }
   .password-zone{
@@ -73,7 +71,6 @@
   input {
     padding: 10px;
     font-size: 16px;
-    border-radius: 4px;
     border: none;
     border-bottom: 1px solid #ccc;
   }

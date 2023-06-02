@@ -1,3 +1,5 @@
+<?php include("path.php"); ?>
+<?php  include(ROOT_PATH . '/controllers/functions.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,22 +21,23 @@
 
 <div class="main">
   <div class="container-upper">
-    <form class="login-form">
+  <form class="login-form" id="login" action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>"  method="post">
       <div class="loginText">
         <h2>Login</h2>
       </div>
       <div class="container">
         <div class="form-group">
           <label for="username">Username</label>
-          <input type="text" id="username" placeholder="Enter your username" required>
+          <input type="text" id="username" name = "username" value="<?php echo $username; ?>" placeholder="Enter your username" required>
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter your password" required>
+          <input type="password" id="password" name = "password" placeholder="Enter your password" required>
         </div>
       </div>
       <div class="btnzone">
-        <button type="submit" class="btnLogin">Login</button>
+      <?php  include(ROOT_PATH . '/controllers/formErrors.php'); ?>
+      <input type="submit" name="login_btn" value="Login" class="btnLogin">
       </div>
     </form>
   </div>

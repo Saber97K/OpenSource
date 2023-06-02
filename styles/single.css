@@ -1,0 +1,126 @@
+.page-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.page-wrapper .main-content-single{
+    flex:4;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.page-wrapper .main-content-single h2{
+    text-align: center;
+}
+
+.page-wrapper .main-content-single .post-content {
+    margin-top: 30px;
+    padding: 40px;
+    box-shadow: 0 0.4rem 3rem rgba(0,0,0,0.1), inset 0 -1px 0 rgba(255,255,255,0.15);
+
+}
+.comments-section{
+    margin-top: 30px;
+    padding: 40px;
+    box-shadow: 0 0.4rem 3rem rgba(0,0,0,0.1), inset 0 -1px 0 rgba(255,255,255,0.15);
+}
+
+.page-wrapper .sidebar-single{
+    margin-top: 57.2px;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.page-wrapper .sidebar-single h2{
+
+	text-align: center;
+	margin-bottom: 30px;
+	
+}
+.sidebar-single .popular-inside{
+    padding: 20px;
+	box-shadow: 0 0.4rem 3rem rgba(0,0,0,0.1), inset 0 -1px 0 rgba(255,255,255,0.15);
+	border: none;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	min-width: 310px;
+    gap: 20px;
+}
+.popular-inside .post-clearfix{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-evenly;
+    border-left: 1px solid #1e74e3;
+    
+}
+.post-clearfix a:hover{
+    cursor: pointer;
+    padding-left: 5px;
+    transition: all 0.3s;
+}
+.post-clearfix a{
+    transition: all 0.3 ;
+}
+.popular-inside .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap:10px;
+}
+.text .author{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.author div{
+    display: flex;
+    flex-direction: row;
+}
+
+.comment form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap:20px;
+}
+
+.author{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+}
+.author .fa-solid{
+    margin-right: 5px;
+}
+.author .after-user-text{
+    margin-right: 20px;
+}
+
+.one-com{
+    margin-top: 30px;
+    padding: 40px;
+    box-shadow: 0 0.4rem 3rem rgba(0,0,0,0.1), inset 0 -1px 0 rgba(255,255,255,0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.one-com .author-dat{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    border-bottom: 1px solid #1e74e3;
+}
+.author-dat .after-user-text{
+    margin-right: 20px;
+}
